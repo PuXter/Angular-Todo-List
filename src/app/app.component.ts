@@ -44,4 +44,13 @@ export class AppComponent {
     this.todos = this.todos.filter( t => t.label !== todo.label);
   }
 
+  changeTodo(todo: any) {
+    if (todo.done == true) {
+      todo.done = false;
+    }
+    else{
+      todo.done = true;
+    }
+  }
+
 }
